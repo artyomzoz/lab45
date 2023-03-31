@@ -1,0 +1,7 @@
+<% include layout, { title: 'Admin Dashboard', pages: pages } %>
+<h1>Admin Dashboard</h1>
+<ul>
+  <% pages.forEach(page => { %>
+    <li><a href="/admin/edit/<%= page.id %>"><%= page.title %></a></li>
+  <% }) %>
+</ul>
